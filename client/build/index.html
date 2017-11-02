@@ -1,0 +1,59 @@
+Html Webpack Plugin:
+<pre>
+  Error: Parse Error: <script src "https://unpkg.com/axios/dist/axios.min.js"></  script>
+      <script>
+          $('.button-collapse').sideNav();
+      </script>
+      <noscript>
+        You need to enable JavaScript to run this app.
+      </noscript>
+      <div id="root"></div>
+      <!--
+        This HTML file is a template.
+        If you open it directly in the browser, you will see an empty page.
+        You can add webfonts, meta tags, or analytics to this file.
+        The build step will place the bundled scripts into the <body> tag.
+        To begin the development, run `npm start` or `yarn start`.
+        To create a production bundle, use `npm run build` or `yarn build`.
+      -->
+      <script src="//widget.cloudinary.com/global/all.js" type="text/javascript"  ></script>
+  <script type="text/javascript" src="/static/js/main.fa4845a0.js"></script></bo  dy>
+  </html>
+  
+  - htmlparser.js:235 new HTMLParser
+    [client]/[html-minifier]/src/htmlparser.js:235:13
+  
+  - htmlminifier.js:944 minify
+    [client]/[html-minifier]/src/htmlminifier.js:944:3
+  
+  - htmlminifier.js:1297 exports.minify
+    [client]/[html-minifier]/src/htmlminifier.js:1297:10
+  
+  - index.js:296 
+    [client]/[html-webpack-plugin]/index.js:296:16
+  
+  - util.js:16 tryCatcher
+    [client]/[bluebird]/js/release/util.js:16:23
+  
+  - promise.js:512 Promise._settlePromiseFromHandler
+    [client]/[bluebird]/js/release/promise.js:512:31
+  
+  - promise.js:569 Promise._settlePromise
+    [client]/[bluebird]/js/release/promise.js:569:18
+  
+  - promise.js:614 Promise._settlePromise0
+    [client]/[bluebird]/js/release/promise.js:614:10
+  
+  - promise.js:693 Promise._settlePromises
+    [client]/[bluebird]/js/release/promise.js:693:18
+  
+  - async.js:133 Async._drainQueue
+    [client]/[bluebird]/js/release/async.js:133:16
+  
+  - async.js:143 Async._drainQueues
+    [client]/[bluebird]/js/release/async.js:143:10
+  
+  - async.js:17 Immediate.Async.drainQueues
+    [client]/[bluebird]/js/release/async.js:17:14
+  
+</pre>
