@@ -7,7 +7,7 @@ class About extends Component {
           <div className="aboutBox">
               <h4>About the Developers</h4>
                 <Col m={3} s={6} className="devs">
-		              <Card>
+		              <Card className="aboutCard">
                     <CardTitle className="devNames">Stephanie Hester</CardTitle>
                      <img className="circle responsive-img" height="100" width="100" src="img/stephanie.jpg" alt="Stephanie Pic"/>
 		                 <h5>Project Manager & Front End Developer</h5>
@@ -17,7 +17,7 @@ class About extends Component {
                   </Card>
                 </Col>
                 <Col m={3} s={6} className="devs">
-		              <Card>
+		              <Card className="aboutCard">
                     <CardTitle className="devNames">Justen Cracraft</CardTitle>
                      <img className="circle responsive-img" height="100" width="100" src="img/justen-pic.jpg" alt="Justen Pic"/>
 		                 <h5>Back-End Developer & Git Master</h5>
@@ -27,7 +27,7 @@ class About extends Component {
 		              </Card>
                 </Col>
                 <Col m={3} s={6} className="devs">
-		              <Card>
+		              <Card className="aboutCard">
                     <CardTitle className="devNames">Chad Coker</CardTitle>
                     <img className="circle responsive-img" height="100" width="100" src="/img/chad-image.jpg" alt="Chad Pic" />
 		                 <h5>Full Stack Developer & Chart-Man</h5>
@@ -37,7 +37,7 @@ class About extends Component {
 		              </Card>
                 </Col>
                 <Col m={3} s={6} className="devs">
-		              <Card>
+		              <Card className="aboutCard">
                     <CardTitle className="devNames">Ari Minton</CardTitle>
                      <img className="circle responsive-img" height="100" width="100" src="img/ari-pic.jpg" alt="Ari is smiling" />
 		                 <h5>Full Stack Developer / API and Text Analysis</h5>

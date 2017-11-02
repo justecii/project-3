@@ -52,6 +52,10 @@ li:hover {
     top: 0; */
 }
 
+.aboutCard {
+    width: 250px;
+}
+
 .inline {
     display: inline;
 }
@@ -159,5 +163,8 @@ li:hover {
     }
     .demo {
         margin: 50px 0px;
+    }
+    .slideImg {
+        height: 800px;
     }
 }
