@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var isLoggedIn = require('../middleware/isLoggedIn');
+// var isLoggedIn = require('../middleware/isLoggedIn');
 var request = require('request');
 var Twitter = require('twitter');
 const TWITTER_CONSUMER_KEY = '0Dqvt2smAU9Hjk2oTQRMSQ8bl'
@@ -9,15 +9,15 @@ const ENC_SECRET = new Buffer(TWITTER_CONSUMER_KEY + ':' + TWITTER_CONSUMER_SECR
 var BEARER_TOKEN;
 
 var oauthOptions = {
-  url: 'https://api.twitter.com/oauth2/token',
-  headers: {'Authorization': 'Basic ' + ENC_SECRET, 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'},
-  body: 'grant_type=client_credentials'
+    url: 'https://api.twitter.com/oauth2/token',
+    headers: { 'Authorization': 'Basic ' + ENC_SECRET, 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+    body: 'grant_type=client_credentials'
 };
 
 
 
 request.post(oauthOptions, function(e, r, body) {
-  console.log(body)
+    console.log(body)
 });
 
 // 10/24: WHILE THE ABOVE SENDS AND ACHIEVES AN AUTH BEARER TOKEN, WE NEED TO GRAB THAT TOKEN AND ASSIGN IT TO A VARIABLE TO BE ABLE TO
@@ -32,11 +32,11 @@ request.post(oauthOptions, function(e, r, body) {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send('Nothing at the root route yet...');
+    res.send('Nothing at the root route yet...');
 });
 
-router.get('/profile', isLoggedIn, function(req, res, next) {
-  res.send('You are logged in and this is your profile.');
+router.get('/profile', function(req, res, next) {
+    res.send('You are logged in and this is your profile.');
 });
 
 module.exports = router;
