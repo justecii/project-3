@@ -6,8 +6,8 @@ class Demo extends Component {
     render(){
         return(
                   <div className="demo">
-                    <Slider>
-                    	<Slide
+                    <Slider >
+                    	<Slide 
                     		src="/img/logo.png"
                     		title="Welcome to WYM!"
                         placement="left">
