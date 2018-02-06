@@ -24,7 +24,7 @@ var userSchema = new mongoose.Schema({
         maxlength: 99
     },
     profilePic: {
-      type: String
+        type: String
     }
 });
 
